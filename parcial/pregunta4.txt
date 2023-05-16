@@ -1,0 +1,3 @@
+las pruebas sistematicas se refieren a las pruebas que se dedican mas a los metodos 
+viendo los errores , que podrian causar un fallo , haciendo que el sofware no funcione.
+mientras que ls pruebas efectivas son dedicadas a casos mas especificos ,para alcanzar una mayor covertura
