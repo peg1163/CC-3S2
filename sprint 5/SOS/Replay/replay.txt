@@ -1,0 +1,39 @@
+Tablero creado 
+Tablero : [[None, None, None, None], [None, None, None, None], [None, None, None, None], [None, None, None, None]]
+El jugador blue con la pieza O
+Tablero : [[None, None, ('O', 'blue'), None], [None, None, None, None], [None, None, None, None], [None, None, None, None]]
+El jugador red con la pieza O
+Tablero : [[None, None, ('O', 'blue'), ('O', 'red')], [None, None, None, None], [None, None, None, None], [None, None, None, None]]
+El jugador blue con la pieza O
+Tablero : [[None, None, ('O', 'blue'), ('O', 'red')], [None, None, None, None], [None, None, None, None], [('O', 'blue'), None, None, None]]
+El jugador red con la pieza S
+Tablero : [[None, None, ('O', 'blue'), ('O', 'red')], [None, ('S', 'red'), None, None], [None, None, None, None], [('O', 'blue'), None, None, None]]
+El jugador blue con la pieza O
+Tablero : [[None, None, ('O', 'blue'), ('O', 'red')], [None, ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), None, None, None]]
+El jugador red con la pieza O
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [None, ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), None, None, None]]
+El jugador blue con la pieza S
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), None, None, None]]
+El jugador red con la pieza S
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), None, ('S', 'red'), None]]
+El jugador blue con la pieza O
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), None, ('S', 'red'), ('O', 'blue')]]
+El jugador red con la pieza S
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, None], [('O', 'blue'), None, None, None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador blue con la pieza O
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, None], [('O', 'blue'), None, ('O', 'blue'), None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red con la pieza S
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, ('S', 'red')], [('O', 'blue'), None, ('O', 'blue'), None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red formo un SOS
+El jugador red con la pieza O
+Tablero : [[('O', 'red'), None, ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, ('S', 'red')], [('O', 'blue'), ('O', 'red'), ('O', 'blue'), None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red formo un SOS
+El jugador red con la pieza S
+Tablero : [[('O', 'red'), ('S', 'red'), ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), None, ('S', 'red')], [('O', 'blue'), ('O', 'red'), ('O', 'blue'), None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red formo un SOS
+El jugador red con la pieza O
+Tablero : [[('O', 'red'), ('S', 'red'), ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), ('O', 'red'), ('S', 'red')], [('O', 'blue'), ('O', 'red'), ('O', 'blue'), None], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red formo un SOS
+El jugador red con la pieza S
+Tablero : [[('O', 'red'), ('S', 'red'), ('O', 'blue'), ('O', 'red')], [('S', 'blue'), ('S', 'red'), ('O', 'red'), ('S', 'red')], [('O', 'blue'), ('O', 'red'), ('O', 'blue'), ('S', 'red')], [('O', 'blue'), ('S', 'red'), ('S', 'red'), ('O', 'blue')]]
+El jugador red formo un SOS
