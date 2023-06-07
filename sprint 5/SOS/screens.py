@@ -12,7 +12,7 @@ class Container(tk.Frame):
         self.pack()
         self.place(x=0, y=0, width=900, height=660)
         self.configure(bg=style.beige)
-        # edita desde aquio
+        # edita desde aqui
         self.controller = controller
         self.init_widgets()
 
@@ -25,7 +25,7 @@ class Container(tk.Frame):
         frame = f(self, self)
         self.frames[f] = frame
         frame.tkraise()
-        #se abre el archivo txt para poder limpiar el registro de la partida ya jugada
+        # se abre el archivo txt para poder limpiar el registro de la partida ya jugada
         archivo = open('Replay/replay.txt', 'w')
         archivo.truncate(0)
 
@@ -60,10 +60,10 @@ class Container2(tk.Frame):
         self.configure(bg=style.beige2)
         self.condition()
         self.canvas.variable = tk.StringVar()
-        #registro de puntos de cada jugador
+        # registro de puntos de cada jugador
         self.red_point = 0
         self.bluepoint = 0
-        #registro de posicion de sos formado
+        # registro de posicion de sos formado
         self.longitud = 0
 
     def condition(self):
@@ -114,7 +114,7 @@ class Container2(tk.Frame):
 
     def on_cell_clicked(self, event):
         piece = self.piece()
-        #si el turno no es del computador
+        # si el turno no es del computador
         if piece != None and ((self.valueTurn.get() == 'red' and self.valuecomputer2.get() == 'No') or (
                 self.valueTurn.get() == 'blue' and self.valuecomputer1.get() == 'No')):
 
@@ -135,7 +135,7 @@ class Container2(tk.Frame):
                 y = self.canvas.canvasy(event.y)
                 col = int(x // self.cell_size)
                 row = int(y // self.cell_size)
-                #guarda en elregistro que se ha creado un tablero
+                # guarda en elregistro que se ha creado un tablero
             if self.board.board_empty():
                 self.replay(piece, self.valueTurn.get())
 
@@ -159,7 +159,7 @@ class Container2(tk.Frame):
                 self.turn_g(piece)
 
             print(f'final: {self.board.board}')
-        #si el turno es del computador
+        # si el turno es del computador
         elif (self.valueTurn.get() == 'red' and self.valuecomputer2.get() == 'Yes') or (
                 self.valueTurn.get() == 'blue' and self.valuecomputer1.get() == 'Yes'):
             pieza = random.randint(0, 1)
@@ -198,8 +198,12 @@ class Container2(tk.Frame):
                 self.O_blue_player.config(state='normal')
                 self.S_red_player.config(state='disabled')
                 self.O_red_player.config(state='disabled')
+                if self.win_or_tie_s('red'):
+                    # si se forma un sos entonces dibuja la linea roja
+                    self.draw_line(self.valueTurn.get())
+
             elif self.win_or_tie_s('red'):
-                #si se forma un sos entonces dibuja la linea roja
+                # si se forma un sos entonces dibuja la linea roja
                 self.draw_line(self.valueTurn.get())
             self.replay(piece, turn)
         else:
@@ -209,11 +213,15 @@ class Container2(tk.Frame):
                 self.O_blue_player.config(state='disabled')
                 self.S_red_player.config(state='normal')
                 self.O_red_player.config(state='normal')
+                if self.win_or_tie_s('blue'):
+                    # si se forma un sos entonces dibuja la linea azul
+                    self.draw_line(self.valueTurn.get())
             elif self.win_or_tie_s('blue'):
                 # si se forma un sos entonces dibuja la linea azul
                 self.draw_line(self.valueTurn.get())
             self.replay(piece, turn)
-    #verifica si hay un ganador o continua el juego
+
+    # verifica si hay un ganador o continua el juego
     def win_or_tie_s(self, turn):
         complete = self.board.win_or_tie_simple()
         if complete == 'Empty Board':
@@ -229,7 +237,8 @@ class Container2(tk.Frame):
                 return True
             elif complete == 'Tie':
                 showinfo(title='Care', message='Tie.\nTry again')
-    #verifica si hay un punto , hay ganador o continua el juego
+
+    # verifica si hay un punto , hay ganador o continua el juego
     def win_or_tie_g(self, turn):
         complete = self.board.win_or_tie_general()
 
@@ -265,7 +274,7 @@ class Container2(tk.Frame):
                     return False
 
     def turn_g(self, piece):
-        #guarda el punto para poder guardarlo el registro
+        # guarda el punto para poder guardarlo el registro
         turna = self.valueTurn.get()
         if self.valueTurn.get() == 'red' and self.valuecomputer2.get() == 'No':
 
