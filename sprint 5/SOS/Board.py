@@ -93,17 +93,17 @@ class Board:
                 # Verifica en columna
                 if row< size and self.get_letter(row, col) == 'S':
                     if self.get_letter(row + 1, col) == 'O' and self.get_letter(row + 2, col) == 'S':
-                        self.posicion.append(((row, col), (row, col + 1), (row, col + 2)))
+                        self.posicion.append(((row, col), (row+1, col), (row+2, col)))
                         return True
                 # Verifica en diagonal    
                 if row <size-2 and col <size-2 and self.get_letter(row, col) == 'S':
                     if self.get_letter(row + 1, col + 1) == 'O' and self.get_letter(row + 2, col + 2) == 'S':
-                        self.posicion.append(((row, col), (row, col + 1), (row, col + 2)))
+                        self.posicion.append(((row, col), (row+1, col + 1), (row+2, col + 2)))
                         return True
                 # Verifica en diagonal inversa    
                 if row >=2 and col <size-2 and self.get_letter(row, col) == 'S':
                     if self.get_letter(row - 1, col + 1) == 'O' and self.get_letter(row - 2, col + 2) == 'S':
-                        self.posicion.append(((row, col), (row, col + 1), (row, col + 2)))
+                        self.posicion.append(((row, col), (row-1, col + 1), (row-2, col + 2)))
                         return True            
         return False
     #retorna un gandor empate o sigue jugando
