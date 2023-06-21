@@ -1,5 +1,6 @@
 Primero nos pide que creemos una clase que nos reserve una hora : 
-   ```       public class Reserva {
+   ```JAVA
+      public class Reserva {
       private static final List<String> horasreservadas=new ArrayList<>();
       public static void reservar(String hora) {
           if (horasreservadas.contains(hora)) {
@@ -16,7 +17,8 @@ Primero nos pide que creemos una clase que nos reserve una hora :
           return horasreservadas.toString();
       
       }
-      }```
+      }
+```
       
 luego nos dice que modifiquemos para poder reservar en aulas, entonces creamos un diccionario para podera asignar  un aua y cierta hora: 
 
