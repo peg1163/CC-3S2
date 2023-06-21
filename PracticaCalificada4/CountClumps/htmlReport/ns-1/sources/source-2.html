@@ -1,0 +1,137 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Strings</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Strings (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Strings</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    69,6%
+  </span>
+  <span class="absValue">
+    (16/23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode"><b class="nc">&nbsp;public class Strings {</b>
+&nbsp;
+&nbsp;    public static int CountClumps(String nums) {
+<b class="fc">&nbsp;        int count = 0;</b>
+<b class="fc">&nbsp;        int i = 0;</b>
+<b class="fc">&nbsp;        int count_size=1;</b>
+&nbsp;        //este bucle recorre todo el arreglo
+<b class="fc">&nbsp;        if (nums.length() == 0) {</b>
+<b class="nc">&nbsp;            return 0;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        if (nums== null) {</b>
+<b class="fc">&nbsp;            return 0;</b>
+&nbsp;        }
+<b class="nc">&nbsp;</b>
+<b class="fc">&nbsp;        while (i &lt; nums.length()-1) {</b>
+<b class="nc">&nbsp;            //si encuentra caracteres iguales aumenta el contador de caracteres y el indice</b>
+<b class="fc">&nbsp;            if (nums.charAt(i) == nums.charAt(i + 1)) {</b>
+<b class="fc">&nbsp;                i++;</b>
+<b class="fc">&nbsp;                count_size++;</b>
+<b class="nc">&nbsp;            //si 2 caracteres juntos no son iguales, entonces se encontro un grupo</b>
+<b class="nc">&nbsp;                // se aumenta el contador de clumps y se reinicia el contador de caracteres</b>
+<b class="fc">&nbsp;            } else if (count_size &gt;= 2) {</b>
+<b class="fc">&nbsp;                count++;</b>
+<b class="fc">&nbsp;                count_size=1;</b>
+<b class="fc">&nbsp;                i++;</b>
+&nbsp;            }
+&nbsp;            else {
+<b class="nc">&nbsp;                i++;</b>
+<b class="fc">&nbsp;            }</b>
+&nbsp;        }
+&nbsp;        //retorna el contador de clumps
+<b class="fc">&nbsp;        return count;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-06-21 08:48</div>
+</div>
+</body>
+</html>
