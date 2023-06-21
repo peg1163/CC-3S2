@@ -6,16 +6,22 @@ creamos el metodo countClumps para poder contabilizazr los clumps en un arreglo 
 Parte 2:
 
 escribiremos primero las pruebas que delimitan el contador ,con los casos  :
+
 longitud arreglo = 0
+
 arreglo = null
+
 longitud arreglo = 1
+
 y uno extra :
+
 arreglo = aabb 
+
 Parte 3:
 
 Con las pruebas ya escritas , las pasamos a codigo :
 
-´´´ 
+``` 
 public class StringTest {
     @Test
     public void testNotVoid() {
@@ -28,6 +34,6 @@ public class StringTest {
     @Test
     public void TestArrays(){
         assert Strings.CountClumps("aabb") == 2;
-    }´´´
+    }```java
     
 
