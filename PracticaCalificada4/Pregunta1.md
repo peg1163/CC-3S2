@@ -1,7 +1,7 @@
 Parte 1:
 creamos el metodo countClumps para poder contabilizazr los clumps en un arreglo contando con la mayor cobertura
 
-    ```java
+    
     public class Strings {
 
     public static int CountClumps(String nums) {
@@ -36,7 +36,7 @@ creamos el metodo countClumps para poder contabilizazr los clumps en un arreglo 
         //retorna el contador de clumps
         return count;
     }
-    }```
+    }
         
 
 Parte 2:
@@ -57,7 +57,7 @@ Parte 3:
 
 Con las pruebas ya escritas , las pasamos a codigo :
 
-    ```java
+    
     public class StringTest {
         @Test
         public void testNotVoid() {
@@ -75,12 +75,12 @@ Con las pruebas ya escritas , las pasamos a codigo :
         public void TestArrays(){
             assert Strings.CountClumps("aabb") == 2;
         }
-    }```
+    }
 
 en esta parte nos muestra errores el TestnotNull y en TestArrays 
 ya que en el segundo solo encuentra 1 clump por lo que modificamos el metodo countclumps() :
                 
-            ```java
+           
                    public class Strings {
 
                 public static int CountClumps(String nums) {
@@ -117,7 +117,7 @@ ya que en el segundo solo encuentra 1 clump por lo que modificamos el metodo cou
                     //retorna el contador de clumps
                     return count;
                 }
-                }```
+                }
 
 Configurado esto ya no hay errores en los tests 
 
@@ -125,15 +125,14 @@ Parte 4:
 Para esto escribimos 2 test que vean un clump que esta al inicio y al final del arreglo :
 
  
-     ```java
-            @Test
+        @Test
         public void Testfirtclump(){
             assert Strings.CountClumps("aaabdfghdhdc") == 1;
         }
         @Test
         public  void Testlastclump(){
             assert Strings.CountClumps("asfhjeiosfdsaaaa") == 1;
-        }```
+        }
 
 
 
