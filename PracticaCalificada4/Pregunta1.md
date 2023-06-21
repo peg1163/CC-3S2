@@ -21,7 +21,7 @@ Parte 3:
 
 Con las pruebas ya escritas , las pasamos a codigo :
 
-``` 
+```java
 public class StringTest {
     @Test
     public void testNotVoid() {
@@ -34,6 +34,6 @@ public class StringTest {
     @Test
     public void TestArrays(){
         assert Strings.CountClumps("aabb") == 2;
-    }```java
+    }```
     
 
